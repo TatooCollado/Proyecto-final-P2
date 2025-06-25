@@ -1,0 +1,38 @@
+.signup-formulario{
+    width :90%;
+    height: 900px;
+}
+.signup-formulario div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+
+@media (min-width:601px){
+    .signup-formulario{
+        flex-direction: row;
+        justify-content:initial;
+        width: 70%;
+    }
+    .signup-formulario h2{
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    .signup-formulario div{
+        width: 50%;
+    }
+
+    .signup-formulario div input{
+        width: 80%;
+    }
+    .signup-formulario div:last-child{
+        flex-basis: 100%;
+        justify-content: center;
+        align-content: space-between;
+    }
+    .signup-formulario .aceptar-boton{
+        width: 40%;
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/logogym.png">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/signup.css">
+    <script src="../js/signup.js" defer></script>
+    <title>REGISTRARSE - NOMBRE GIMNASIO</title>
+</head>
+<body>
+    <header>
+        <div class="logo-header-container">
+            <a href="index.html"><img class="logo" alt="gimnasio-logo" src="../assets/logogym.png"></a>
+            <h1>NOMBRE GIMNASIO</h1>
+        </div>
+        <div class="login-signup-header">
+            <a href="login.html">
+                Iniciar sesión
+                <img src="../assets/login-button.png" alt="login-icono">
+            </a>
+        </div>
+    </header>
+    <main class="signup-main">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="login.html">Iniciar sesión</a></li>
+                </ul>
+                <div class="contacto-aside">
+                    <div>
+                        <img src="../assets/ubicacion.png" alt="ubicacion-icono">
+                        <p>
+                            Ubicación
+                            <iframe title="Ubicación del Gimnasio" src="#" frameborder="0"></iframe>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../assets/telefono.png" alt="telefono-icono">
+                        <a href="tel:+3413185623">+3413185623</a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+        <form id="formularioRegistro" class="signup-formulario" novalidate>
+            <h2>REGISTRARSE</h2>
+            <div class="label-input-container">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required autocomplete="given-name">
+                <p id="error-nombre" class="error-message"></p>
+            </div>
+            <div class="label-input-container">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required autocomplete="family-name">
+                <p id="error-apellido" class="error-message"></p>
+            </div>
+            <div class="label-input-container">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+                <p id="error-email" class="error-message"></p>
+            </div>
+            <div class="label-input-container">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required autocomplete="tel">
+                <p id="error-telefono" class="error-message"></p>
+            </div>
+            <div class="label-input-container">
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha" required autocomplete="bday">
+                <p id="error-fecha" class="error-message"></p>
+            </div>
+            <div class="label-input-container">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Mínimo 6 caracteres" required autocomplete="new-password">
+                <p id="error-contraseña" class="error-message"></p>
+            </div>
+            <div class="label-input-container">
+                <label>Repetir contraseña:</label>
+                <input type="password" id="confirmarContraseña" name="confirmarContraseña" placeholder="Repite tu contraseña" required autocomplete="new-password">
+                <p id="error-confirmarContraseña" class="error-message"></p>
+            </div>
+            <button type="submit" id="signup-boton" class="aceptar-boton">Registrarse</button>
+            <p id="success-message" class="success-message"></p>
+        </form>
+    </main>
+    <footer>
+        <a href="#" target="_blank">
+            <img src="../assets/whatsapp.png" alt="whatsapp-icono"> +3413185623
+        </a>
+        <a href="#" target="_blank">
+            <img src="../assets/facebook.png" alt="facebook-icono"> <strong>NOMBRE GIMNASIO</strong>
+        </a>
+        <p><strong>NOMBRE GIMNASIO</strong> Todos los derechos reservados. 2025&copy;</p>
+    </footer>
+</body>
+</html>

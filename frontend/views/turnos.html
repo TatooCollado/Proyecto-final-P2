@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/logogym.png">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <script src="../js/turnos.js" defer></script>
+    <title>Mis Turnos - NOMBRE GIMNASIO</title>
+</head>
+<body>
+    <header>
+        <div class="logo-header-container">
+            <a href="index.html"><img class="logo" alt="gimnasio-logo" src="../assets/logogym.png"></a>
+            <h1>NOMBRE GIMNASIO</h1>
+        </div>
+        <div id="auth-links" class="login-signup-header">
+             <a href="#" id="logout-button">Cerrar Sesión</a>
+        </div>
+    </header>
+    <main class="dashboard-main">
+        <section id="user-profile" class="dashboard-section">
+            <h2>Bienvenido, <span id="user-name"></span></h2>
+            <p>Tu tipo de membresía: <strong id="member-type"></strong></p>
+            <div id="membership-actions">
+                <p>¿Quieres cambiar tu membresía?</p>
+                <div class="membership-buttons">
+                    <button id="upgrade-clasica" class="membership-button">Clásica</button>
+                    <button id="upgrade-black" class="membership-button">Black</button>
+                    <button id="upgrade-soloclases" class="membership-button">Solo Clases</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="turnos-section" class="dashboard-section">
+            <h3>Turnos de Musculación</h3>
+            <div id="turnos-container" class="card-container"></div>
+        </section>
+
+        <section id="clases-section" class="dashboard-section">
+            <h3>Clases Grupales</h3>
+            <div id="clases-container" class="card-container"></div>
+        </section>
+    </main>
+    <footer>
+        <a href="#" target="_blank"><img src="../assets/whatsapp.png" alt="whatsapp-icono"> +3413185623</a>
+        <a href="#" target="_blank"><img src="../assets/facebook.png" alt="facebook-icono"> <strong>NOMBRE GIMNASIO</strong></a>
+        <p><strong>NOMBRE GIMNASIO</strong> Todos los derechos reservados. 2025&copy;</p>
+    </footer>
+</body>
+</html>

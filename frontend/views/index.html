@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/logogym.png">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <script src="../js/index.js" defer></script>
+    <title>NOMBRE GIMNASIO</title>
+</head>
+<body>
+    <header>
+        <div class="logo-header-container">
+            <a href="index.html"><img class="logo" alt="gimnasio-logo" src="../assets/logogym.png"></a>
+            <h1>NOMBRE GIMNASIO</h1>
+        </div>
+        <div id="auth-links" class="login-signup-header">
+            <a href="login.html">
+                Iniciar sesión
+                <img src="../assets/login-button.png" alt="login-icono">
+            </a>
+            <a href="signup.html">
+                Registrarse
+                <img src="../assets/signup-button.png" alt="signup-icono">
+            </a>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <nav>
+                <ul id="main-nav">
+                    <div class="login-signup-nav">
+                        <li><a href="login.html">Iniciar sesión</a></li>
+                        <li><a href="signup.html">Registrarse</a></li>
+                    </div>
+                    <li><a href="#home-container">Inicio</a></li>
+                    <li><a href="#conocenos-container">Conocenos</a></li>
+                    <li><a href="#contactanos-container">Contacto</a></li>
+                    <li><a href="#actividades-container">Actividades</a></li>
+                    <li><a href="#membresias-container">Membresías</a></li>
+                    <li><a href="#nuestrahistoria-container">Nuestra historia</a></li>
+                </ul>
+                <div class="contacto-aside">
+                    <div>
+                        <img src="../assets/ubicacion.png" alt="ubicacion-icono">
+                        <p>Ubicación<iframe src="#" frameborder="0"></iframe></p>
+                    </div>
+                    <div>
+                        <img src="../assets/telefono.png" alt="telefono-icono">
+                        <a href="tel:+3413185623">+3413185623</a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+        <div>
+            <section id="home-container">
+                <h2>DON'T SIT <span class="span-h2">GET FIT</span></h2>
+                <p>Tu mejor versión te está esperando! Unite hoy a <strong>NOMBRE GIMNASIO</strong></p>
+                <p>En esta app podrás elegir a nuestro excelente personal y las clases que mejor se adapten a vos.</p>
+                <p>Tenemos un montón de beneficios con nuestras diferentes membresías.</p>
+            </section>
+            <section id="conocenos-container">
+                <h2>CONOC<span class="span-h2">ENOS</span></h2>
+                <article class="reservas-conocenos"><h3>Reservas</h3><p>Elegí tu clase favorita y asegura tu lugar</p></article>
+                <article class="horarios-conocenos"><h3>Horarios</h3><p>Lunes a sábados 8 AM a 8 PM</p></article>
+                <article class="membresias-conocenos"><h3>Membresías</h3><p>Elegí cuál es la mejor opción para vos</p></article>
+                <article class="contacto-conocenos"><h3>Contacto y sugerencias</h3><p>Tu opinión es importante, nos ayuda a mejorar</p></article>
+            </section>
+            <section id="contactanos-container">
+                <h2>CONTAC <span class="span-h2">TANOS</span></h2>
+                <form id="formularioContacto" novalidate>
+                    <div class="inputs-contacto">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre">
+                        <span id="error-nombre" class="error-mensaje"></span>
+                    </div>
+                    <div class="inputs-contacto">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido">
+                        <span id="error-apellido" class="error-mensaje"></span>
+                    </div>
+                    <div class="inputs-contacto">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email">
+                        <span id="error-email" class="error-mensaje"></span>
+                    </div>
+                    <div class="inputs-contacto">
+                        <label for="razon">Razón de contacto:</label>
+                        <select name="razon" id="razon">
+                            <option value="">Elegí tu razón:</option>
+                            <option value="consulta">Quiero hacer una consulta</option>
+                            <option value="queja">Quiero dejar una queja</option>
+                            <option value="sugerencia">Quiero hacer una sugerencia</option>
+                        </select>
+                        <span id="error-razon" class="error-mensaje"></span>
+                    </div>
+                    <div class="inputs-contacto">
+                        <label for="comentario" name="comentario">Mensaje:</label>
+                        <textarea name="comentario" id="comentario" rows="10" cols="40" placeholder="Escribí aquí..."></textarea>
+                        <span id="error-comentario" class="error-mensaje"></span>
+                        <input id="submit-boton" type="submit" value="Enviar">
+                        <p id="mensaje-exito"></p>
+                    </div>
+                </form>
+            </section>
+            <section id="actividades-container">
+                <h2>ACTIVI<span class="span-h2">DADES</span></h2>
+                <div class="lista-actividades">
+                    <article class="crossfit-actividades"><h3>CROSSFIT</h3></article>
+                    <article class="box-actividades"><h3>BOX</h3></article>
+                    <article class="spinning-actividades"><h3>SPINNING</h3></article>
+                    <article class="musculacion-actividades"><h3>MUSCULACIÓN</h3></article>
+                    <article class="funcional-actividades"><h3>FUNCIONAL</h3></article>
+                </div>
+            </section>
+            <section id="membresias-container">
+                <h2>MEMBRE<span class="span-h2">SÍAS</span></h2>
+                <ul>
+                    <li class="membresia-black">
+                        <h3>MEMBRESÍA BLACK</h3>
+                        <p>Acceso libre al gimnasio</p>
+                        <p>Acceso libre a las clases</p>
+                        <p>Monitoreo personalizado y coaching</p>
+                        <p>Acceso a los horarios</p>
+                    </li>
+                    <li class="membresia-clasica">
+                        <h3>MEMBRESÍA CLÁSICA</h3>
+                        <p>Acceso libre al gimnasio</p>
+                        <p>Monitoreo personalizado y coaching</p>
+                        <p>Acceso a los horarios</p>
+                    </li>
+                    <li class="membresia-soloclases">
+                        <h3>MEMBRESÍA SOLO CLASES</h3>
+                        <p>Acceso libre a las clases con tu registro</p>
+                        <p>Acceso a los horarios</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="nuestrahistoria-container">
+                <h2>NUESTRA <span class="span-h2">HISTORIA</span></h2>
+                <div>
+                    <p>Somos uno de los gimnasios más antiguos pero más modernos. En <strong>NOMBRE GIMNASIO</strong> trabajan 50 entrenadores y cada día acuden a nuestro local más de 200 personas.</p>
+                    <p>Nos dedicamos a ayudarte a mejorar tu calidad de vida de una manera activa y divertida.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <a href="#" target="_blank">
+            <img src="../assets/whatsapp.png" alt="whatsapp-icono"> +3413185623
+        </a>
+        <a href="#" target="_blank">
+            <img src="../assets/facebook.png" alt="facebook-icono"> <strong>NOMBRE GIMNASIO</strong>
+        </a>
+        <p><strong>NOMBRE GIMNASIO</strong> Todos los derechos reservados. 2025&copy;</p>
+    </footer>
+</body>
+</html>

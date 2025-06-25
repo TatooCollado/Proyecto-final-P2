@@ -1,0 +1,375 @@
+main{
+    background-color: #535353;
+    text-align: center;
+}
+#home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80vh;
+    padding: 1em 1em 9em 1em;
+    background-image:linear-gradient(#00000080, #00000080), url(../assets/inicio-mobile.png);
+    background-size:cover;
+}
+#conocenos-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+#conocenos-container article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 85%;
+    height: 50vh;
+    background-size: cover ;
+    background-position: center;
+    border-radius: 30px;
+}
+#conocenos-container h3{
+    font-weight: 900;
+    color: #E3EC39;
+}
+#conocenos-container p{
+    text-align: center;
+    font-weight: 600;
+    white-space: pre-line;
+}
+.reservas-conocenos{
+    background-image: linear-gradient(#00000080, #00000080),url(../assets/reservas.png);
+}
+.horarios-conocenos{
+    background-image: linear-gradient(#00000080, #00000080),url(../assets/horarios.png);
+}
+.membresias-conocenos{
+    background-image: linear-gradient(#00000080, #00000080),url(../assets/membresias.png);
+}
+.contacto-conocenos{
+    background-image: linear-gradient(#00000080, #00000080),url(../assets/contactosugerencias.png);
+}
+#contactanos-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contactanos-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    height: 650px;
+    padding: 30px 0;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+.inputs-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+}
+.inputs-contacto:last-child{
+    height: 500px;
+}
+
+.inputs-contacto input,
+.inputs-contacto select{
+    height: 30px;
+    border: 1px solid #373867;
+}
+.inputs-contacto input,
+.inputs-contacto select,
+.inputs-contacto textarea{
+    width: 80%;
+    background: linear-gradient(0deg, #00000033, #00000033), #FFFFFF;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #535353fc;
+
+}
+.inputs-contacto textarea{
+    border: none;
+}
+#submit-boton{
+    width: 75px;
+    height: 35px;
+    margin: 20px auto;
+    background-color: #E3EC39;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #000000;
+}
+
+.lista-actividades{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    margin: 50px 0px;
+}
+#actividades-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+#actividades-container h2{
+    align-self: center;
+}
+#actividades-container article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    text-align: center;
+}
+#actividades-container h3{
+    background-color: hsla(0, 0%, 7%, 0.568);
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+.crossfit-actividades{
+    background-image: linear-gradient(#0000004d, #0000004d),url(../assets/crossfit.jpg);
+}
+.box-actividades{
+    background-image: linear-gradient(#0000004d, #0000004d),url(../assets/box.png);
+}
+.functional-actividades{
+    background-image: linear-gradient(#0000004d, #0000004d),url(../assets/funcional.png);
+}
+.spinning-actividades{
+    background-image: linear-gradient(#0000004d, #0000004d),url(../assets/spinning.png);
+}
+.musculacion-actividades{
+    background-image: linear-gradient(#0000004d, #0000004d),url(../assets/fitness.png);
+}
+#membresias-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#membresias-container ul{
+    width: 90%;
+}
+#membresias-container li{
+    height: 80vh;
+    margin: 70px 0;
+    background-size:cover;
+    background-position: center;
+    border-radius: 10px;
+    white-space: pre-line;
+}
+#membresias-container p{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.membresia-soloclases{
+    background-image: linear-gradient(#000000b3, #000000b3),url(../assets/soloclases.png);
+}
+.membresia-clasica{
+    background-image: linear-gradient(#000000b3, #000000b3),url(../assets/clasica.png);
+}
+.membresia-black{
+    background-image: linear-gradient(#000000b3, #000000b3),url(../assets/black.png);
+}
+.display-only-desktop{
+    display: none;
+}
+#nuestrahistoria-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 0px 200px;
+}
+#nuestrahistoria-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 90%;
+    background: linear-gradient(0deg, #00000033, #00000033), #e0e0e0e6;
+    border-radius: 18px;
+    white-space: pre-line;
+}
+#nuestrahistoria-container p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #404040;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    h2{
+        font-size: 6.25rem;
+    }
+    main p{
+        font-size: 1.9rem;
+    }
+    #home-container{
+        height: 200vh;
+    }
+    #conocenos-container{
+        gap: 140px;
+    }
+    #conocenos-container article{
+        height: 450px;
+    }
+    #conocenos-container h3{
+        font-size: 3.5rem;
+    }
+    #conocenos-container p{
+        font-size: 2.8rem;
+    }
+
+    #contactanos-container form{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .inputs-contacto:not(:last-child){
+        width: 45%;
+    }
+    #actividades-container article{
+        height: 65vh;
+    }
+    #actividades-container h3{
+        font-size: 5rem;
+    }
+    #membresias-container li{
+        height: 65vh;
+    }
+    .membresia-soloclases{
+        background-image: linear-gradient(#8b7c7c66, #8b7c7c66),url(../assets/soloclases.png);
+    }
+    .membresia-clasica{
+        background-image: linear-gradient(#8b7c7c66, #8b7c7c66),url(../assets/clasica.png);
+    }
+    .membresia-black{
+        background-image: linear-gradient(#8b7c7c66, #8b7c7c66),url(../assets/black.png);
+    }
+    #nuestrahistoria-container div{
+        height: 40vh;
+    }
+    #nuestrahistoria-container p{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1025px){
+    h2{
+        font-size: 6.25rem;
+    }
+    main{
+        display: flex;
+    }
+    aside{
+        display: flex;
+        justify-content: center;
+        width: 5%;
+        background-color: #E3EC39;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    nav a,
+    nav p{
+        color: #000000;
+    }
+    .login-signup-nav{
+        display: none;
+    }
+    h2{
+        flex-basis: 100%;
+        justify-content: center;
+    }
+    #home-container{
+        height: 100vh;
+        background-image: linear-gradient(#00000080, #00000080),url(../assets/inicio.png);
+    }
+    #home-container h2{
+        flex-basis: content;
+    }
+    #home-container p{
+        font-size: 1.9rem;
+        white-space: normal;
+    }
+    #conocenos-container{
+        justify-content: center;
+    }
+    #conocenos-container article{
+        width: 40%;
+        height: 35vh;
+    }
+    #conocenos-container p{
+        font-size: 1.9rem;
+        white-space: normal;
+    }
+    #contactanos-container form{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 500px;
+    }
+    .inputs-contacto label{
+        padding: 10px 0;
+        text-align: left;
+    }
+    .inputs-contacto:not(:last-child){
+        width: 25%;
+    }
+    .inputs-contacto:last-child{
+        width: 100%;
+    }
+
+    .lista-actividades{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    #actividades-container article{
+        width: 30%;
+        height: 25vh;
+    }
+    #membresias-container ul{
+        width: 40%;
+    }
+    #membresias-container li{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 70vh;
+    }
+
+    #nuestrahistoria-container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #nuestrahistoria-container h2{
+        flex-basis:content ;
+        font-size: 3.75rem;
+    }
+    #nuestrahistoria-container div{
+        width: 55%;
+        height: 50vh;
+    }
+    #nuestrahistoria-container p{
+        font-size: 1.5rem;
+    }
+    .display-only-desktop{
+        display: block;
+    }
+}
