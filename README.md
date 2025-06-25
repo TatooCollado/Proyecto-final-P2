@@ -1,3 +1,7 @@
+https://proyecto-final-p2.onrender.com ---> deployada
+
+
+
 Gimnasio Web App - Proyecto Final
 Este es el proyecto final del curso, una aplicación web full-stack para la gestión de un gimnasio. Permite a los usuarios registrarse, iniciar sesión, ver y anotarse a turnos y clases según su tipo de membresía.
 
