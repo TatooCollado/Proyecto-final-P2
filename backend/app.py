@@ -6,17 +6,15 @@ from functools import wraps
 
 def create_app():
     app = Flask(__name__)
-    
-    # --- CONFIGURACIÓN SIMPLE Y DIRECTA ---
+        
     app.config['SECRET_KEY'] = 'la-clave-mas-simple-y-efectiva'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///gym.db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-    # Inicializar las extensiones
-    CORS(app, supports_credentials=True, origins=['http://127.0.0.1:5500', 'http://localhost:5500'])
+    CORS(app, supports_credentials=True, origins=['https://proyecto-final-p2.onrender.com', 'http://127.0.0.1:5500', 'http://localhost:5500'])
     db.init_app(app)
 
-    # --- DECORADORES Y RUTAS (SIN CAMBIOS) ---
+    
     def login_required(f):
         @wraps(f)
         def decorated_function(*args, **kwargs):
@@ -50,7 +48,7 @@ def create_app():
         password = data.get('password')
         user = User.query.filter_by(email=email).first()
         if not user or not check_password_hash(user.password_hash, password): return jsonify({"message": "Email o contraseña incorrectos"}), 401
-        session.permanent = True # Hacemos la sesión "permanente" para que dure
+        session.permanent = True 
         session['user_id'] = user.id
         session['member_type'] = user.member_type
         return jsonify({"message": "Login exitoso", "user": {"id": user.id, "email": user.email, "member_type": user.member_type}})

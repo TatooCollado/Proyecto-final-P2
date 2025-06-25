@@ -45,7 +45,7 @@ function updateViewBasedOnMembership(memberType) {
 
 async function handleLogout(e) {
     if(e) e.preventDefault();
-    await fetch('http://127.0.0.1:5000/api/logout', { method: 'POST', credentials: 'include' });
+    await fetch('https://gym-api-5hyh.onrender.com/api/logout', { method: 'POST', credentials: 'include' });
     localStorage.removeItem('user');
     window.location.href = 'index.html';
 }
@@ -56,8 +56,8 @@ async function fetchAndRenderActivities(type) {
     container.innerHTML = `<p class="loading-message">Cargando ${type}s...</p>`;
     try {
         const [activitiesResponse, bookingsResponse] = await Promise.all([
-            fetch(`http://127.0.0.1:5000/api/${type}s`, { credentials: 'include' }),
-            fetch('http://127.0.0.1:5000/api/user/bookings', { credentials: 'include' })
+            fetch(`https://gym-api-5hyh.onrender.com/api/${type}s`, { credentials: 'include' }),
+            fetch('https://gym-api-5hyh.onrender.com/api/user/bookings', { credentials: 'include' })
         ]);
         
         if (!activitiesResponse.ok) throw new Error(`No se pudieron cargar los ${type}s.`);
@@ -111,7 +111,7 @@ async function cancelActivity(id, type, button) {
 }
 
 async function handleActivityAction(action, id, type, button) {
-    const url = `http://127.0.0.1:5000/api/${type}s/${id}/${action}`;
+    const url = `https://gym-api-5hyh.onrender.com/api/${type}s/${id}/${action}`;
     const originalButtonSibling = action === 'book' ? button.nextElementSibling : button.previousElementSibling;
     
     button.style.display = 'none';
@@ -134,7 +134,7 @@ async function handleActivityAction(action, id, type, button) {
 async function changeMembership(newType) {
     if (!confirm(`¿Confirmas que quieres cambiar tu membresía a ${newType}?`)) return;
     try {
-        const response = await fetch('http://127.0.0.1:5000/api/user/membership', {
+        const response = await fetch('https://gym-api-5hyh.onrender.com/api/user/membership', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             credentials: 'include',

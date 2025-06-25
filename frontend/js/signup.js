@@ -60,7 +60,7 @@ async function registrarUsuario() {
     boton.textContent = 'Registrando...';
 
     try {
-        const response = await fetch('http://127.0.0.1:5000/api/register', {
+        const response = await fetch('https://gym-api-5hyh.onrender.com/api/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

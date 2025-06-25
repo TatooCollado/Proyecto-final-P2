@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 logoutButton.addEventListener('click', async (e) => {
                     e.preventDefault();
                     try {
-                        const response = await fetch('http://127.0.0.1:5000/api/logout', { 
+                        const response = await fetch('https://gym-api-5hyh.onrender.com/api/logout', { 
                             method: 'POST',
                             credentials: 'include'
                         });
