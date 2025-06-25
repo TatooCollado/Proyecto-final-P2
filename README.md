@@ -71,7 +71,7 @@ o fue desarrollado como parte de un curso. Las contribuciones son bienvenidas. P
 
 
 👨‍💻 Autores
-Diaz, Jeniffer
-Jabazze, Carlos
-Di Monaco, Florencia
-Collado, Ignacio
+Diaz, Jeniffer.
+Jabazze, Carlos.
+Di Monaco, Florencia.
+Collado, Ignacio.
