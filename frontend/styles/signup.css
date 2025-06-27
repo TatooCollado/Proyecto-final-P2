@@ -25,7 +25,7 @@
     }
 
     .signup-formulario div input{
-        width: 80%;
+        width: 70%;
     }
     .signup-formulario div:last-child{
         flex-basis: 100%;
@@ -33,6 +33,7 @@
         align-content: space-between;
     }
     .signup-formulario .aceptar-boton{
-        width: 40%;
+        width: 30%;
+        margin-left: 500px;
     }
 }

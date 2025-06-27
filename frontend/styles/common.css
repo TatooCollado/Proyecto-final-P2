@@ -65,6 +65,7 @@ p {
   background-image: url(../../Assets/Images/background.jpg);
   background-size: cover;
 }
+
 .login-main aside,
 .signup-main aside {
   width: 100%;
@@ -133,8 +134,6 @@ p {
 .error-mensaje {
   margin: 10px;
   padding: 5px;
-  border: 3px solid #e64848;
-  border-radius: 5px;
   text-align: center;
   font-size: 14px;
   color: #e64848;
