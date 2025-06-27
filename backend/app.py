@@ -8,6 +8,8 @@ def create_app():
     app = Flask(__name__)
         
     app.config['SECRET_KEY'] = 'la-clave-mas-simple-y-efectiva'
+    app.config['SESSION_COOKIE_SAMESITE'] = 'None'
+    app.config['SESSION_COOKIE_SECURE'] = True
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///gym.db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
