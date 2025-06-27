@@ -62,7 +62,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../../Assets/Images/background.jpg);
+  background-image: url(../assets/background.jpg);
   background-size: cover;
 }
 
