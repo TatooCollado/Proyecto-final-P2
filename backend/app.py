@@ -3,16 +3,20 @@ from flask_cors import CORS
 from models import db, User, Turno, Clase
 from werkzeug.security import generate_password_hash, check_password_hash
 from functools import wraps
+from flask_session import Session
 
 def create_app():
     app = Flask(__name__)
         
     app.config['SECRET_KEY'] = 'la-clave-mas-simple-y-efectiva'
+    app.config['SESSION_TYPE'] = 'filesystem'  
+    app.config['SESSION_PERMANENT'] = True
+    app.config['SESSION_USE_SIGNER'] = True  
     app.config['SESSION_COOKIE_SAMESITE'] = 'None'
     app.config['SESSION_COOKIE_SECURE'] = True
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///gym.db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
+    Session(app)
     CORS(app, supports_credentials=True, origins=['https://proyecto-final-p2.onrender.com', 'http://127.0.0.1:5500', 'http://localhost:5500'])
     db.init_app(app)
 

@@ -3,3 +3,4 @@ Flask-SQLAlchemy
 Flask-CORS
 Werkzeug
 gunicorn
+Flask-Session
