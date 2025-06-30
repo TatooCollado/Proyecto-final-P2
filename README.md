@@ -32,8 +32,7 @@ Prerrequisitos
 Tener Python 3 instalado.
 Se recomienda usar Visual Studio Code con la extensión Live Server.
 1. Clonar el Repositorio
-git clone [URL-DE-TU-REPOSITORIO]
-cd [NOMBRE-DE-TU-REPOSITORIO]
+git clone https://github.com/TatooCollado/Proyecto-final-P2.git
 2. Configurar el Backend
 Navega a la carpeta del backend y crea un entorno virtual.
 
