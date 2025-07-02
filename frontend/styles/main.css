@@ -143,7 +143,7 @@ main{
 .box-actividades{
     background-image: linear-gradient(#0000004d, #0000004d),url(../assets/box.png);
 }
-.functional-actividades{
+.funcional-actividades{
     background-image: linear-gradient(#0000004d, #0000004d),url(../assets/funcional.png);
 }
 .spinning-actividades{
@@ -352,6 +352,9 @@ main{
         flex-direction: column;
         justify-content: space-around;
         height: 70vh;
+    }
+    #membresia-clasica li h3{
+        margin-top: 20px;
     }
 
     #nuestrahistoria-container{

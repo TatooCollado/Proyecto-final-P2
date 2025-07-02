@@ -3,6 +3,7 @@
     padding: 40px 20px;
     color: #fff;
     min-height: 80vh;
+    background-image: url("../assets/background.jpg")
 }
 
 .dashboard-section {
