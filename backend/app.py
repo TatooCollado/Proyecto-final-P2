@@ -17,7 +17,7 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///gym.db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     Session(app)
-    CORS(app, supports_credentials=True, origins=['https://proyecto-final-p2.onrender.com', 'http://127.0.0.1:5500', 'http://localhost:5500'])
+    CORS(app, supports_credentials=True, origins=['https://proyecto-final-p2.onrender.com/', 'http://127.0.0.1:5500', 'http://localhost:5500'])
     db.init_app(app)
 
     
